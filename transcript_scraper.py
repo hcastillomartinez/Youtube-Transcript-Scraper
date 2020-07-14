@@ -52,8 +52,10 @@ def get_transcript(url):
 
 
 if len(sys.argv) < 2:
-    print('Not enough arguments.')
+    print('Error - Not enough arguments.')
 else:
     url = sys.argv[1]
-    # prints title
-    print(get_title(url))
+    if 'youtube' in url:
+        get_transcript(url)
+    else:
+        print('Error - Enter a Youtube video URL.')

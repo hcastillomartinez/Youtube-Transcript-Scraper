@@ -15,6 +15,6 @@ Selenium can be installed via pip.
 
 ## Usage
 
-    python transcript_scraper.py url
+    >python transcript_scraper.py url
 
 Will not run without a Youtube URL in the argument to prevent user error.

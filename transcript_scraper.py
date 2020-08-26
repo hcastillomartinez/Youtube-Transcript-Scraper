@@ -3,9 +3,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import sys
+import config
+
 
 # place your own path to webdriver
-path = r'C:\\Users\\damia\\Downloads\\geckodriver\\geckodriver.exe'
+path = config.FIRE_PATH
 
 def get_title(url):
     driver = webdriver.Firefox(executable_path=path)
